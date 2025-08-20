@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "1044599130996",
+    "project_id": "iosquizchickneggs",
+    "storage_bucket": "iosquizchickneggs.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044599130996:ios:aae66a0a982d6220787a21",
+        "android_client_info": {
+          "package_name": "com.kqjwhd.quizchik"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvxTpZalSVN2CxcHb00zMP06d5btriUe4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
