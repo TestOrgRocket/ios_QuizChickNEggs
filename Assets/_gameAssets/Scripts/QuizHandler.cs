@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -78,12 +79,19 @@ public class QuizHandler : MonoBehaviour
 
     void showCurrentQuestion()
     {
-        quizText.text = _selectedQuestions[_currentQuestionIndex].QuestionText;
+        List<Tween> toExecute = new List<Tween>();
+        quizText.text = "";
+        string questionText = _selectedQuestions[_currentQuestionIndex].QuestionText;
+        Tween t = quizText.DOText(questionText, 3f);
+        toExecute.Add(t);
         List<string> options = _selectedQuestions[_currentQuestionIndex].Options.ToList();
         foreach (Button button in quizOptions)
         {
             int randomIndex = Random.Range(0, options.Count);
-            button.GetComponentInChildren<Text>().text = options[randomIndex];
+            button.GetComponentInChildren<Text>().text = "";
+            string optionText = options[randomIndex];
+            Tween t2 = button.GetComponentInChildren<Text>().DOText(optionText, 5f);
+            toExecute.Add(t2);
             if (options[randomIndex] == _selectedQuestions[_currentQuestionIndex].Answer)
             {
                 button.onClick.RemoveAllListeners();
@@ -103,6 +111,10 @@ public class QuizHandler : MonoBehaviour
                 });
             }
             options.RemoveAt(randomIndex);
+        }
+        foreach (Tween tween in toExecute)
+        {
+            tween.Play();
         }
     }
 
