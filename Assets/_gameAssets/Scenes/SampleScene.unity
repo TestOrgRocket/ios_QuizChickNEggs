@@ -944,8 +944,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 11.270004}
-  m_SizeDelta: {x: -180.2, y: -172.69}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_SizeDelta: {x: -180.2, y: -106.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &326098770
 MonoBehaviour:
@@ -973,7 +973,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 300
+    m_MaxSize: 299
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1444,6 +1444,7 @@ RectTransform:
   - {fileID: 1466839962}
   - {fileID: 1257450706}
   - {fileID: 1797655583}
+  - {fileID: 1721372737}
   - {fileID: 27588430}
   - {fileID: 1330882865}
   m_Father: {fileID: 861465988}
@@ -1879,7 +1880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 11.270004}
+  m_AnchoredPosition: {x: 0, y: 11.27002}
   m_SizeDelta: {x: -180.2, y: -172.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &709256755
@@ -4185,7 +4186,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257450705}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.82, y: 0.82, z: 0.82}
   m_ConstrainProportionsScale: 1
@@ -4195,8 +4196,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -306, y: -931.9026}
-  m_SizeDelta: {x: 612.13, y: 309.51}
+  m_AnchoredPosition: {x: 0, y: -700}
+  m_SizeDelta: {x: 1200, y: 670}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1257450707
 MonoBehaviour:
@@ -4721,6 +4722,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1330882865}
+  - component: {fileID: 1330882867}
   m_Layer: 5
   m_Name: Red Image
   m_TagString: Untagged
@@ -4751,6 +4753,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1330882867
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330882864}
+  m_CullTransparentMesh: 1
 --- !u!1 &1345680959
 GameObject:
   m_ObjectHideFlags: 0
@@ -4864,7 +4874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 11.270004}
+  m_AnchoredPosition: {x: 0, y: 11.27002}
   m_SizeDelta: {x: -180.2, y: -172.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1347077100
@@ -4981,135 +4991,134 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Effective date: May 2025
 
-    
 
-    QuizChickN''Eggs ("us", "we", or
-    "our") operates the QuizChickN''Eggs mobile application (hereinafter referred
-    to as the "Service").
 
-    
+    QuizChickN''Eggs ("us", "we", or "our")
+    operates the QuizChickN''Eggs mobile application (hereinafter referred to as
+    the "Service").
 
-    This page informs you of our policies regarding
-    the collection, use, and disclosure of personal data when you use our Service
-    and the choices you have associated with that data.
 
-    
 
-    We use your
-    data to provide and improve the Service. By using the Service, you agree to the
-    collection and use of information in accordance with this policy. Unless otherwise
-    defined in this Privacy Policy, the terms used in this Privacy Policy have the
-    same meanings as in our Terms and Conditions.
+    This page informs you of our policies regarding the collection,
+    use, and disclosure of personal data when you use our Service and the choices
+    you have associated with that data.
 
-    
+
+
+    We use your data to provide and improve
+    the Service. By using the Service, you agree to the collection and use of information
+    in accordance with this policy. Unless otherwise defined in this Privacy Policy,
+    the terms used in this Privacy Policy have the same meanings as in our Terms
+    and Conditions.
+
+
 
     1. Definitions
 
     Service
 
-    
 
-    Service
-    is the QuizChickN''Eggs mobile application operated by Developer
 
-    
+    Service is the QuizChickN''Eggs
+    mobile application operated by Developer
+
+
+
+    Personal Data
+
+
 
     Personal
-    Data
+    Data means data about a living individual who can be identified from those data
+    (or from those and other information either in our possession or likely to come
+    into our possession).
 
-    
 
-    Personal Data means data about a living individual who can
-    be identified from those data (or from those and other information either in
-    our possession or likely to come into our possession).
-
-    
 
     Usage Data
 
-    
 
-    Usage
-    Data is data collected automatically either generated by the use of the Service
-    or from the Service infrastructure itself (for example, the duration of a page
-    visit).
 
-    
+    Usage Data is data collected automatically
+    either generated by the use of the Service or from the Service infrastructure
+    itself (for example, the duration of a page visit).
+
+
 
     Cookies
 
-    
 
-    Cookies are small files stored on your
-    device (computer or mobile device).
 
-    
+    Cookies
+    are small files stored on your device (computer or mobile device).
 
-    2. Information Collection and
-    Use
 
-    We collect several different types of information for various purposes
-    to provide and improve our Service to you.
 
-    
+    2.
+    Information Collection and Use
 
-    2.1 Types of Data Collected
+    We collect several different types of information
+    for various purposes to provide and improve our Service to you.
 
-    Personal
-    Data
 
-    While using our Service, we may ask you to provide us with certain
-    personally identifiable information that can be used to contact or identify you
-    ("Personal Data"). Personally identifiable information may include, but is not
-    limited to:
 
-    
+    2.1 Types
+    of Data Collected
+
+    Personal Data
+
+    While using our Service, we may ask
+    you to provide us with certain personally identifiable information that can be
+    used to contact or identify you ("Personal Data"). Personally identifiable information
+    may include, but is not limited to:
+
+
 
     Cookies and Usage Data
 
-    Usage Data
+    Usage
+    Data
 
-    When you
-    access the Service by or through a mobile device, we may collect certain information
-    automatically, including, but not limited to, the type of mobile device you use,
-    your mobile device unique ID, the IP address of your mobile device, your mobile
-    operating system, the type of mobile Internet browser you use, unique device
-    identifiers and other diagnostic data ("Usage Data").
+    When you access the Service by or through a mobile device, we may collect
+    certain information automatically, including, but not limited to, the type of
+    mobile device you use, your mobile device unique ID, the IP address of your mobile
+    device, your mobile operating system, the type of mobile Internet browser you
+    use, unique device identifiers and other diagnostic data ("Usage Data").
 
-    
 
-    Tracking &
-    Cookies Data
+
+    Tracking
+    & Cookies Data
 
     We use cookies and similar tracking technologies to track
     the activity on our Service and we hold certain information.
 
-    
 
-    Cookies
-    are files with a small amount of data which may include an anonymous unique identifier.
+
+    Cookies are
+    files with a small amount of data which may include an anonymous unique identifier.
     Cookies are sent to your browser from a website and stored on your device. Other
     tracking technologies are also used such as beacons, tags and scripts to collect
     and track information and to improve and analyse our Service.
 
-    
 
-    You
-    can instruct your browser to refuse all cookies or to indicate when a cookie
-    is being sent. However, if you do not accept cookies, you may not be able to
-    use some portions of our Service.
 
-    
+    You can
+    instruct your browser to refuse all cookies or to indicate when a cookie is being
+    sent. However, if you do not accept cookies, you may not be able to use some
+    portions of our Service.
+
+
 
     Examples of Cookies we use:
 
-    
 
-    Session
-    Cookies. We use Session Cookies to operate our Service.
 
-    Preference Cookies.
-    We use Preference Cookies to remember your preferences and various settings.
+    Session Cookies.
+    We use Session Cookies to operate our Service.
+
+    Preference Cookies. We use
+    Preference Cookies to remember your preferences and various settings.
 
     Security
     Cookies. We use Security Cookies for security purposes.
@@ -5119,7 +5128,7 @@ MonoBehaviour:
     QuizChickN''Eggs
     uses the collected data for various purposes:
 
-    
+
 
     To provide and maintain
     the Service
@@ -5147,19 +5156,19 @@ MonoBehaviour:
     on - computers located outside of your state, province, country or other governmental
     jurisdiction where the data protection laws may differ than those from your jurisdiction.
 
-    
+
 
     If
     you are located outside Seychelles and choose to provide information to us, please
     note that we transfer the data, including Personal Data, to Seychelles and process
     it there.
 
-    
+
 
     Your consent to this Privacy Policy followed by your submission
     of such information represents your agreement to that transfer.
 
-    
+
 
     QuizChickN''Eggs
     will take all steps reasonably necessary to ensure that your data is treated
@@ -5167,7 +5176,7 @@ MonoBehaviour:
     Data will take place to an organization or a country unless there are adequate
     controls in place including the security of your data and other personal information.
 
-    
+
 
     5.
     Disclosure Of Data
@@ -5177,7 +5186,7 @@ MonoBehaviour:
     QuizChickN''Eggs may disclose
     your Personal Data in the good faith belief that such action is necessary to:
 
-    
+
 
     To
     comply with a legal obligation
@@ -5197,83 +5206,82 @@ MonoBehaviour:
     under GDPR, you have certain individual rights. You can learn more about these
     guides in the GDPR Guide.
 
-    
+
 
     6. Security of Data
 
-    The security
-    of your data is important to us but remember that no method of transmission over
-    the Internet or method of electronic storage is 100% secure. While we strive
-    to use commercially acceptable means to protect your Personal Data, we cannot
-    guarantee its absolute security.
+    The security of your
+    data is important to us but remember that no method of transmission over the
+    Internet or method of electronic storage is 100% secure. While we strive to use
+    commercially acceptable means to protect your Personal Data, we cannot guarantee
+    its absolute security.
 
-    
+
 
     7. Service Providers
 
-    We may
-    employ third party companies and individuals to facilitate our Service ("Service
-    Providers"), to provide the Service on our behalf, to perform Service-related
-    services or to assist us in analyzing how our Service is used.
+    We may employ third party
+    companies and individuals to facilitate our Service ("Service Providers"), to
+    provide the Service on our behalf, to perform Service-related services or to
+    assist us in analyzing how our Service is used.
 
-    
 
-    These
-    third parties have access to your Personal Data only to perform these tasks on
-    our behalf and are obligated not to disclose or use it for any other purpose.
 
-    
+    These third parties have
+    access to your Personal Data only to perform these tasks on our behalf and are
+    obligated not to disclose or use it for any other purpose.
 
-    8.
-    Links to Other Sites
 
-    Our Service may contain links to other sites that
-    are not operated by us. If you click a third party link, you will be directed
-    to that third party''s site. We strongly advise you to review the Privacy Policy
-    of every site you visit.
 
-    
+    8. Links to
+    Other Sites
 
-    We have no control over and assume no responsibility
-    for the content, privacy policies or practices of any third party sites or services.
+    Our Service may contain links to other sites that are not operated
+    by us. If you click a third party link, you will be directed to that third party''s
+    site. We strongly advise you to review the Privacy Policy of every site you visit.
 
-    
 
-    9.
-    Children''s Privacy
 
-    Our Service does not address anyone under the age of
-    18 ("Children").
+    We
+    have no control over and assume no responsibility for the content, privacy policies
+    or practices of any third party sites or services.
 
-    
 
-    We do not knowingly collect personally identifiable
-    information from anyone under the age of 18. If you are a parent or guardian
-    and you are aware that your Child has provided us with Personal Data, please
-    contact us. If we become aware that we have collected Personal Data from children
-    without verification of parental consent, we take steps to remove that information
-    from our servers.
 
-    
+    9. Children''s Privacy
 
-    10. Changes to This Privacy Policy
+    Our
+    Service does not address anyone under the age of 18 ("Children").
 
-    We may
-    update our Privacy Policy from time to time. We will notify you of any changes
-    by posting the new Privacy Policy on this page.
 
-    
 
-    We will let you
-    know via email and/or a prominent notice on our Service, prior to the change
-    becoming effective and update the "effective date" at the top of this Privacy
-    Policy.
+    We do
+    not knowingly collect personally identifiable information from anyone under the
+    age of 18. If you are a parent or guardian and you are aware that your Child
+    has provided us with Personal Data, please contact us. If we become aware that
+    we have collected Personal Data from children without verification of parental
+    consent, we take steps to remove that information from our servers.
 
-    
 
-    You are advised to review this Privacy Policy periodically
-    for any changes. Changes to this Privacy Policy are effective when they are posted
-    on this page.'
+
+    10.
+    Changes to This Privacy Policy
+
+    We may update our Privacy Policy from time
+    to time. We will notify you of any changes by posting the new Privacy Policy
+    on this page.
+
+
+
+    We will let you know via email and/or a prominent notice
+    on our Service, prior to the change becoming effective and update the "effective
+    date" at the top of this Privacy Policy.
+
+
+
+    You are advised to review this
+    Privacy Policy periodically for any changes. Changes to this Privacy Policy are
+    effective when they are posted on this page.'
 --- !u!222 &1348607046
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5565,7 +5573,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466839961}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.82, y: 0.82, z: 0.82}
   m_ConstrainProportionsScale: 1
@@ -5575,8 +5583,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 306, y: -606}
-  m_SizeDelta: {x: 612.13, y: 309.51}
+  m_AnchoredPosition: {x: 0, y: -700}
+  m_SizeDelta: {x: 1200, y: 670}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1466839963
 MonoBehaviour:
@@ -6674,6 +6682,164 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694238150}
   m_CullTransparentMesh: 1
+--- !u!1 &1712825353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1712825354}
+  - component: {fileID: 1712825356}
+  - component: {fileID: 1712825355}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1712825354
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712825353}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1721372737}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -16.26001, y: 46.96}
+  m_SizeDelta: {x: -227.6, y: -93.93}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1712825355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712825353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 300
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'NOTE: Answer options cycle thourgh.
+
+    Every option shown at the same
+    time is <b>outdated</b>!'
+--- !u!222 &1712825356
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712825353}
+  m_CullTransparentMesh: 1
+--- !u!1 &1721372736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1721372737}
+  - component: {fileID: 1721372739}
+  - component: {fileID: 1721372738}
+  m_Layer: 5
+  m_Name: NOTE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1721372737
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721372736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1712825354}
+  m_Father: {fileID: 614565427}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 154.5}
+  m_SizeDelta: {x: 0, y: 309}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1721372738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721372736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.68235296}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1721372739
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721372736}
+  m_CullTransparentMesh: 1
 --- !u!1 &1722138173
 GameObject:
   m_ObjectHideFlags: 0
@@ -7073,7 +7239,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797655582}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.82, y: 0.82, z: 0.82}
   m_ConstrainProportionsScale: 1
@@ -7083,8 +7249,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 306, y: -931.9026}
-  m_SizeDelta: {x: 612.13, y: 309.51}
+  m_AnchoredPosition: {x: 0, y: -700}
+  m_SizeDelta: {x: 1200, y: 670}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1797655584
 MonoBehaviour:
@@ -7435,7 +7601,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 11.270004}
+  m_AnchoredPosition: {x: 0, y: 11.27002}
   m_SizeDelta: {x: -180.2, y: -172.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1929997522
@@ -8264,8 +8430,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -306, y: -606}
-  m_SizeDelta: {x: 612.13, y: 309.51}
+  m_AnchoredPosition: {x: 0, y: -700}
+  m_SizeDelta: {x: 1200, y: 670}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2130305009
 MonoBehaviour:

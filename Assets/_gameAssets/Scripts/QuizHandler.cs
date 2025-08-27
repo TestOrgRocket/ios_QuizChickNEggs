@@ -85,36 +85,85 @@ public class QuizHandler : MonoBehaviour
         Tween t = quizText.DOText(questionText, 3f);
         toExecute.Add(t);
         List<string> options = _selectedQuestions[_currentQuestionIndex].Options.ToList();
-        foreach (Button button in quizOptions)
+        StartCoroutine(optionsCycle(options, _selectedQuestions[_currentQuestionIndex].Answer));
+        // foreach (Button button in quizOptions)
+        // {
+        //     int randomIndex = Random.Range(0, options.Count);
+        //     button.GetComponentInChildren<Text>().text = "";
+        //     string optionText = options[randomIndex];
+        //     Tween t2 = button.GetComponentInChildren<Text>().DOText(optionText, 5f);
+        //     toExecute.Add(t2);
+        //     if (options[randomIndex] == _selectedQuestions[_currentQuestionIndex].Answer)
+        //     {
+        //         button.onClick.RemoveAllListeners();
+        //         button.onClick.AddListener(() =>
+        //         {
+        //             AddQuestionToEnd(button.GetComponentInChildren<Text>().text, true);
+        //             correctAnswer();
+        //         });
+        //     }
+        //     else
+        //     {
+        //         button.onClick.RemoveAllListeners();
+        //         button.onClick.AddListener(() =>
+        //         {
+        //             AddQuestionToEnd(button.GetComponentInChildren<Text>().text, false);
+        //             incorrectAnswer();
+        //         });
+        //     }
+        //     options.RemoveAt(randomIndex);
+        // }
+        foreach (Tween tween in toExecute)
         {
-            int randomIndex = Random.Range(0, options.Count);
-            button.GetComponentInChildren<Text>().text = "";
-            string optionText = options[randomIndex];
-            Tween t2 = button.GetComponentInChildren<Text>().DOText(optionText, 5f);
-            toExecute.Add(t2);
-            if (options[randomIndex] == _selectedQuestions[_currentQuestionIndex].Answer)
+            tween.Play();
+        }
+    }
+
+    bool _buttonPressed = false;
+    IEnumerator optionsCycle(List<string> options, string correctAnswerString)
+    {
+        do
+        {
+            yield return null;
+            int currentQuestion = _currentQuestionIndex;
+            buttonsDisable();
+            _buttonPressed = false;
+            string randomOption = options[Random.Range(0, options.Count)];
+            Button randomButton = getRandomButton();
+            randomButton.gameObject.SetActive(true);
+            randomButton.GetComponentInChildren<Text>().text = "";
+            randomButton.GetComponentInChildren<Text>().DOText(randomOption, 1.5f);
+            if (randomOption == correctAnswerString)
             {
-                button.onClick.RemoveAllListeners();
-                button.onClick.AddListener(() =>
+                randomButton.onClick.RemoveAllListeners();
+                randomButton.onClick.AddListener(() =>
                 {
-                    AddQuestionToEnd(button.GetComponentInChildren<Text>().text, true);
+                    AddQuestionToEnd(randomOption, true);
                     correctAnswer();
                 });
             }
             else
             {
-                button.onClick.RemoveAllListeners();
-                button.onClick.AddListener(() =>
+                randomButton.onClick.RemoveAllListeners();
+                randomButton.onClick.AddListener(() =>
                 {
-                    AddQuestionToEnd(button.GetComponentInChildren<Text>().text, false);
+                    AddQuestionToEnd(randomOption, false);
                     incorrectAnswer();
                 });
             }
-            options.RemoveAt(randomIndex);
-        }
-        foreach (Tween tween in toExecute)
+            yield return new WaitForSeconds(3f);
+        } while (_buttonPressed == false);
+
+        Button getRandomButton()
         {
-            tween.Play();
+            return quizOptions[Random.Range(0, quizOptions.Count)];
+        }
+        void buttonsDisable()
+        {
+            foreach (Button b in quizOptions)
+            {
+                b.gameObject.SetActive(false);
+            }
         }
     }
 
@@ -130,20 +179,24 @@ public class QuizHandler : MonoBehaviour
 
     public void correctAnswer()
     {
+        _buttonPressed = true;
         _correctAnswersCount++;
         VibrationSettings.Vibrate();
+        StopAllCoroutines();
         StartCoroutine(FlashGreenImage());
         NextQuestion();
     }
 
     public void incorrectAnswer()
     {
+        _buttonPressed = true;
         _incorrectAnswersCount++;
         VibrationSettings.Vibrate();
+        StopAllCoroutines();
         StartCoroutine(FlashRedImage());
         NextQuestion();
     }
-    public GameObject redImage,greenImage;
+    public GameObject redImage, greenImage;
     IEnumerator FlashRedImage()
     {
         redImage.SetActive(true);
